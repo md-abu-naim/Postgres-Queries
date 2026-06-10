@@ -48,7 +48,7 @@ select deparment_name, count(*) from employees as users
 inner join deparments using (deparment_id)
 group by deparment_name
 
--- -- 4. Find the department name with the highest avarage salary
--- select deparment_name, round(avg(salary)) as avg_salary from employees as users
--- inner join deparments using (deparment_id)
--- group by deparment_name order by avg_salary desc limit 1
+-- 4. Find the department name with the highest avarage salary
+select deparment_name, round(avg(salary)) as avg_salary from employees as users
+inner join deparments using (deparment_id)
+group by deparment_name order by avg_salary desc limit 1
