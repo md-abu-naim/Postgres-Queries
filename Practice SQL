@@ -38,10 +38,10 @@ inner join deparments as d on e.deparment_id = d.deparment_id
 select * from employees as e
 inner join deparments using(deparment_id)
 
--- -- 2. Show deparment name with avarage salary
--- select deparment_name, round(avg(salary)) from employees as e
--- inner join deparments using(deparment_id)
--- group by deparment_name
+-- 2. Show deparment name with avarage salary
+select deparment_name, round(avg(salary)) from employees as e
+inner join deparments using(deparment_id)
+group by deparment_name
 
 -- -- 3. Count employess in each department
 -- select deparment_name, count(*) from employees as users
