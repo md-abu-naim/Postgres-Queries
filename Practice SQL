@@ -31,12 +31,12 @@ insert into deparments(deparment_name)
 values('HR'),('Marketing'),('Digital'),('Sales'),('IT')
 
 
--- -- 1. Inner join to retrieve employee & deparments information
--- select * from employees as e
--- inner join deparments as d on e.deparment_id = d.deparment_id
---     -- short hand
--- select * from employees as e
--- inner join deparments using(deparment_id)
+-- 1. Inner join to retrieve employee & deparments information
+select * from employees as e
+inner join deparments as d on e.deparment_id = d.deparment_id
+    -- short hand
+select * from employees as e
+inner join deparments using(deparment_id)
 
 -- -- 2. Show deparment name with avarage salary
 -- select deparment_name, round(avg(salary)) from employees as e
