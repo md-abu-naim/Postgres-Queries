@@ -52,3 +52,7 @@ group by deparment_name
 select deparment_name, round(avg(salary)) as avg_salary from employees as users
 inner join deparments using (deparment_id)
 group by deparment_name order by avg_salary desc limit 1
+
+-- 5. Count employess hired each year
+select extract(year from hire_date), count(*) from employees 
+group by hire_date
