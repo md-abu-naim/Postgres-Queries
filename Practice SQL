@@ -8,17 +8,17 @@ create table employees(
 )
 
   -- insert into employees
---   insert into employees(employee_name, deparment_id, salary, hire_date)
---   values('John Smith', 1, 55000.00, '2020-03-15'),
--- ('Emma Johnson', 2, 62000.00, '2019-07-22'),
--- ('Michael Brown', 3, 48000.00, '2021-01-10'),
--- ('Sophia Davis', 1, 75000.00, '2018-11-05'),
--- ('William Wilson', 4, 52000.00, '2022-06-18'),
--- ('Olivia Taylor', 2, 68000.00, '2020-09-30'),
--- ('James Anderson', 3, 45000.00, '2023-02-14'),
--- ('Ava Martinez', 4, 58000.00, '2021-08-25'),
--- ('Benjamin Thomas', 1, 81000.00, '2017-12-12'),
--- ('Charlotte Garcia', 2, 64000.00, '2022-04-08');
+  insert into employees(employee_name, deparment_id, salary, hire_date)
+  values('John Smith', 1, 55000.00, '2020-03-15'),
+('Emma Johnson', 2, 62000.00, '2019-07-22'),
+('Michael Brown', 3, 48000.00, '2021-01-10'),
+('Sophia Davis', 1, 75000.00, '2018-11-05'),
+('William Wilson', 4, 52000.00, '2022-06-18'),
+('Olivia Taylor', 2, 68000.00, '2020-09-30'),
+('James Anderson', 3, 45000.00, '2023-02-14'),
+('Ava Martinez', 4, 58000.00, '2021-08-25'),
+('Benjamin Thomas', 1, 81000.00, '2017-12-12'),
+('Charlotte Garcia', 2, 64000.00, '2022-04-08');
 
 -- Create deparment table
   create table deparments(
@@ -26,9 +26,9 @@ create table employees(
   deparment_name varchar(50)
   )
 
--- -- Insert data into department
--- insert into deparments(deparment_name)
--- values('HR'),('Marketing'),('Digital'),('Sales'),('IT')
+-- Insert data into department
+insert into deparments(deparment_name)
+values('HR'),('Marketing'),('Digital'),('Sales'),('IT')
 
 
 -- -- 1. Inner join to retrieve employee & deparments information
