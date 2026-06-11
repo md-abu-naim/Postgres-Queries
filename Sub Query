@@ -38,9 +38,9 @@ where salary = (select max(salary) from employee)
 select * from employee
 where salary > (select avg(salary) from employee)
 
--- -- Name of the employee who gets the higest salary in Human Resources department
--- select * from employee
--- where salary = (
---   select max(salary) from employee
---   where deparment_name = 'Human Resources'
---   )
+-- Name of the employee who gets the higest salary in Human Resources department
+select * from employee
+where salary = (
+  select max(salary) from employee
+  where deparment_name = 'Human Resources'
+  )
