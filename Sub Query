@@ -1,0 +1,46 @@
+-- Create employee table
+create table employee(
+  id serial primary key,
+  name varchar(50),
+  salary decimal(10, 2),
+  deparment_name varchar(50),
+  hire_date date
+)
+
+-- Insert into employee table
+INSERT INTO employee (name, salary, deparment_name, hire_date)
+VALUES
+('John Smith', 55000.00, 'Engineering', '2020-03-15'),
+('Emma Johnson', 62000.00, 'Human Resources', '2019-07-22'),
+('Michael Brown', 48000.00, 'Marketing', '2021-01-10'),
+('Sophia Davis', 75000.00, 'Engineering', '2018-11-05'),
+('William Wilson', 52000.00, 'Finance', '2022-06-18'),
+('Olivia Taylor', 68000.00, 'Human Resources', '2020-09-30'),
+('James Anderson', 45000.00, 'Marketing', '2023-02-14'),
+('Ava Martinez', 58000.00, 'Finance', '2021-08-25'),
+('Benjamin Thomas', 81000.00, 'Engineering', '2017-12-12'),
+('Charlotte Garcia', 64000.00, 'Human Resources', '2022-04-08'),
+('Daniel White', 59000.00, 'Sales', '2021-05-20'),
+('Mia Harris', 72000.00, 'Engineering', '2019-10-11'),
+('Ethan Clark', 51000.00, 'Marketing', '2022-01-17'),
+('Isabella Lewis', 67000.00, 'Finance', '2020-12-03'),
+('Noah Walker', 47000.00, 'Sales', '2023-07-01');
+
+-- -- Find the highest salary
+-- select max(salary) from employee
+
+-- -- Find wich employee get higest salary
+-- select * from employee
+-- where salary = (select max(salary) from employee)
+
+
+-- -- Find employee who ear more than avg salary
+-- select * from employee
+-- where salary > (select avg(salary) from employee)
+
+-- -- Name of the employee who gets the higest salary in Human Resources department
+-- select * from employee
+-- where salary = (
+--   select max(salary) from employee
+--   where deparment_name = 'Human Resources'
+--   )
