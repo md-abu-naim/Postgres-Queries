@@ -29,9 +29,9 @@ VALUES
 -- Find the highest salary
 select max(salary) from employee
 
--- -- Find wich employee get higest salary
--- select * from employee
--- where salary = (select max(salary) from employee)
+-- Find wich employee get higest salary
+select * from employee
+where salary = (select max(salary) from employee)
 
 
 -- -- Find employee who ear more than avg salary
