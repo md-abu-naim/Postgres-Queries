@@ -26,8 +26,8 @@ VALUES
 ('Isabella Lewis', 67000.00, 'Finance', '2020-12-03'),
 ('Noah Walker', 47000.00, 'Sales', '2023-07-01');
 
--- -- Find the highest salary
--- select max(salary) from employee
+-- Find the highest salary
+select max(salary) from employee
 
 -- -- Find wich employee get higest salary
 -- select * from employee
