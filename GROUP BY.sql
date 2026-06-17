@@ -1,5 +1,3 @@
-
-
 -- GROUP BY
 select country, avg(age) from students
 group by country
