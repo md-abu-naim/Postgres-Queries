@@ -1,10 +1,8 @@
 -- CREATE DATABASE
 create database school;
 
-
 -- DELETE (drop) DATABASE
 drop database school;
-
 
 -- TABLE CREATEION
 create table student (
@@ -15,10 +13,8 @@ create table student (
   dob date
 )
 
-
 -- TABLE DELETION
 drop table student;
-
 
 -- drop + recreate if already exists (safe way)
 drop table if exists student;
