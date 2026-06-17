@@ -5,9 +5,6 @@ create table employe (
   age int
 )
 
-
-  Thithis is example
-
 -- Renaming table name
 alter table employe rename to employee;
 
